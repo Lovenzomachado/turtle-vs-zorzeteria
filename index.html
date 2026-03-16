@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TURTLE — Character Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="scanlines"></div>
+
+  <div id="game-wrapper">
+    <!-- HUD Top -->
+    <div id="hud-top">
+      <div id="player-block">
+        <div id="player-name">TURTLE</div>
+        <div id="health-bar-bg"><div id="health-bar"></div></div>
+      </div>
+      <div id="vs-label">VS</div>
+      <div id="enemy-block">
+        <div id="enemy-name">???</div>
+        <div id="health-bar-bg-e"><div id="health-bar-e"></div></div>
+      </div>
+    </div>
+
+    <!-- Stage Label -->
+    <div id="stage-label">ROOFTOP SHOWDOWN</div>
+
+    <!-- Canvas -->
+    <canvas id="arena" width="900" height="420"></canvas>
+
+    <!-- HUD Bottom -->
+    <div id="hud-bottom">
+      <div id="state-display">
+        <span id="state-label">IDLE</span>
+      </div>
+      <div id="controls-hint">
+        <span class="key-hint"><kbd>S</kbd> STANCE</span>
+        <span class="key-hint"><kbd>J</kbd> PUNCH</span>
+        <span class="key-hint"><kbd>K</kbd> KICK</span>
+        <span class="key-hint"><kbd>SPACE</kbd> JUMP</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
